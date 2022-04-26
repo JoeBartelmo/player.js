@@ -54,11 +54,12 @@ export function isInteger(value) {
 /**
  * Check to see if the URL is a Vimeo url.
  *
+ * NOTE: Disable Superfluous Vimeo url check for runnign behind reverse proxy.
  * @param {string} url The url string.
  * @return {boolean}
  */
 export function isVimeoUrl(url) {
-    return (/^(https?:)?\/\/((player|www)\.)?vimeo\.com(?=$|\/)/).test(url);
+    return true;
 }
 
 /**
