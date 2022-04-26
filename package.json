@@ -1,5 +1,5 @@
 {
-  "name": "@vimeo/player",
+  "name": "@joebartelmo/player",
   "version": "2.16.4",
   "description": "Interact with and control an embedded Vimeo Player.",
   "license": "MIT",
@@ -30,7 +30,10 @@
     "src",
     "dist"
   ],
-  "repository": "vimeo/player.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": "git://github.com/JoeBartelmo/player.js.git",
   "bugs": "https://github.com/vimeo/player.js/issues",
   "keywords": [
     "vimeo",

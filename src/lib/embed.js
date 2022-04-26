@@ -89,7 +89,7 @@ export function getOEmbedData(videoUrl, params = {}, element) {
             throw new TypeError(`“${videoUrl}” is not a vimeo.com url.`);
         }
 
-        let url = `https://vimeo.com/api/oembed.json?url=${encodeURIComponent(videoUrl)}`;
+        let url = `/api/proxy/vimeo.com/api/oembed.json?url=${encodeURIComponent(videoUrl)}`;
 
         for (const param in params) {
             if (params.hasOwnProperty(param)) {
